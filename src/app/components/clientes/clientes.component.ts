@@ -97,8 +97,8 @@ export class ClientesComponent implements OnInit {
   
 
     // agregar post
-    if (itemCopy.IdArticulo == 0 || itemCopy.IdArticulo == null) {
-      itemCopy.IdArticulo = 0;
+    if (itemCopy.IdCliente == 0 || itemCopy.IdCliente == null) {
+      itemCopy.IdCliente = 0;
       this.clientesService.post(itemCopy).subscribe((res: any) => {
         this.Volver();
         this.modalDialogService.Alert("Registro agregado correctamente.");
